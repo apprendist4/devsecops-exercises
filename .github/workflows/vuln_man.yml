@@ -76,7 +76,7 @@ jobs:
            tags: ${{ matrix.project }}:latest
 
        - name: Generate docker SBOMs
-         run: |
+          run: |
            cdxgen
            --type docker
            --format json
